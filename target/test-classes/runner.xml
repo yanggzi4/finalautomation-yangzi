@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name=" amazon test">
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="osVersion" value="Sierra"></parameter>
+    <parameter name="browserVersion" value="100"></parameter>
+
+    <parameter name="os" value="OS X"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://www.saucedemo.com/"></parameter>
+
+    <test name="login">
+        <classes>
+            <class name="com.amazon.LoginTest"></class>
+        </classes>
+    </test>
+
+    <!--<test name="basic components">-->
+    <!--<classes>-->
+    <!--<class name="com.saucedemo.BasicComponentsTest"></class>-->
+    <!--</classes>-->
+    <!--</test>-->
+</suite>
